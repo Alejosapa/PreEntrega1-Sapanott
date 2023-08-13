@@ -1,0 +1,33 @@
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .carta{
+            background-color: #ffffff;
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border: 2px solid #000;
+            box-sizing: border-box ;
+            margin: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+            position: relative;
+            p{
+                    padding: 5px; 
+            }
+            h5{
+                    font-size: 20px;
+            }
+            button{
+                
+                    background-color: #000000;
+                    color: #ffffff;
+                    border-radius: 6px;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 120px;
+            }
+    }
+}
