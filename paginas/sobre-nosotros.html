@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿quieres saber mas sobre nuestro equipo? ">
     <title>4GatosLocos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -28,9 +29,12 @@
     </header>
     <main>
     <div class="nosotros">
-        <h5>Un poco sobre nosotros</h5>
-        <h6>Sean bienvenidos y bienvenidas a “4 gatos locos”  el sueño de unos amigos que ya lleva 3 años en marcha, tiempo en el que no dejamos de hacer lo que sabemos, dar buenas experiencias. De dar una noche inolvidable para una pareja o simplemente una salida de amigos. pero a esto no lo podríamos lograr gracias a nuestro personal, a esas personas que atienden con amabilidad y educación, a esos cocineros que se encargan de que todo sea artesanal y fresco y a ese barman que hace que los tragos sean únicos y coloridos. gracias a todos ellos por hacer este sueño realidad, también queremos agradecer a las personas que nos visitan y eligen cada día, gracias a ellos y a todo su amor y confianza.
-        </h6>
+        <img src="../multimedia/img/clientes.jpg" alt="integrantes-del-bar">
+        <div class="texto-nosotros">
+            <h5>Un poco sobre nosotros</h5>
+            <h6>Sean bienvenidos y bienvenidas a “4 gatos locos”  el sueño de unos amigos que ya lleva 3 años en marcha, tiempo en el que no dejamos de hacer lo que sabemos, dar buenas experiencias. De dar una noche inolvidable para una pareja o simplemente una salida de amigos. pero a esto no lo podríamos lograr gracias a nuestro personal, a esas personas que atienden con amabilidad y educación, a esos cocineros que se encargan de que todo sea artesanal y fresco y a ese barman que hace que los tragos sean únicos y coloridos. gracias a todos ellos por hacer este sueño realidad, también queremos agradecer a las personas que nos visitan y eligen cada día, gracias a ellos y a todo su amor y confianza.
+            </h6>
+        </div>
     </div>
     </main>
     <footer class="footer">
@@ -43,52 +47,27 @@
         <a href=""><img class="logo-form" src="../multimedia/img/whatsapp.png" alt="logowhatsapp"></a>
         <a href="https://www.facebook.com/4gatoslocosbar" target="_blank"><img class="logo-form" src="../multimedia/img/logo facebook.png" alt="logo facebook"></a>
     </div>
-    <div class="formulario" >
-      <form>
-        <p>¡¡Animate y dejanos tu opinion respondiendo una breve encuesta¡¡</p>
-        <label for="">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Ingrese su nombre">
-        <br>
-        <br>
-        <label for="">Apellido:</label>
-        <input type="text" name="apellido" placeholder="Ingrese su apellido">
-    <fieldset>
-        <legend>¿Es la primera ves que nos visitas?</legend>
-        <label for="Si, es la primera ves">Si, es la primera ves</label>
-        <input type="radio" name="Opinion-visita" id="Si, es la primera ves">
-        <label for="No, ya los habia visitado antes">No, ya los habia visitado antes</label>
-        <input type="radio" name="Opinion-visita" id="No, ya los habia visitado antes">
-        <label for="Suelo venir con frecuencia">Suelo venir con frecuencia</label>
-        <input type="radio" name="Opinion-visita" id="Suelo venir con frecuencia">
-        <label for="Otro">Otro</label>
-        <textarea name="Opinion-visita"  cols="30" rows="2" placeholder="Escriba aqui su opinion"></textarea>
-    </fieldset>
-    <fieldset>
-        <legend>¿Que le parecio la comida?</legend>
-        <label for="Me parecio muy sabrosa">Me parecio muy sabrosa</label>
-        <input type="radio" name="opinion-comida" id="Me parecio muy sabrosa">
-        <label for="No es nada fuera de lo comun">No es nada fuera de lo comun</label>
-        <input type="radio" name="opinion-comida" id="No es nada fuera de lo comun">
-        <label for="No me gusto">No me gusto</label>
-        <input type="radio" name="opinion-comida" id="No me gusto">
-        <label for="Otro">Otro</label>
-        <textarea name="opinion-comida"  cols="30" rows="2" placeholder="Escriba aqui su opinion"></textarea>
-    </fieldset>
-    <fieldset>
-        <legend>¿Que le parecio el lugar?</legend>
-        <label for="Agradable">Agradable</label>
-        <input type="radio" name="opinion-lugar" id="Agradable">
-        <label for="Normal">Normal</label>
-        <input type="radio" name="opinion-lugar" id="Normal">
-        <label for="No me gusto">No me gusto</label>
-        <input type="radio" name="opinion-lugar" id="No me gusto">
-        <label for="Otro">Otro</label>
-        <textarea name="opinion-lugar" cols="30" rows="2" placeholder="Escriba aqui su opinion"></textarea>  
-    </fieldset>
-        <button type="submit">Enviar</button>
-        <button type="submit">Restablecer</button>
-      </form>  
-    </div>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+        <label for="floatingInputDisabled">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></textarea>
+        <label for="floatingTextareaDisabled">Comments</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" disabled>Disabled textarea with some text inside</textarea>
+        <label for="floatingTextarea2Disabled">Comments</label>
+      </div>
+      <div class="form-floating">
+        <select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example" disabled>
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <label for="floatingSelectDisabled">Works with selects</label>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

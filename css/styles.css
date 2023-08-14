@@ -36,15 +36,6 @@
 .tarjetas .carta h5 {
   font-size: 20px;
 }
-.tarjetas .carta button {
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 6px;
-  position: absolute;
-  bottom: 10px;
-  left: 120px;
-}
-
 .grid {
   display: grid;
   margin: 10px;
@@ -88,6 +79,48 @@
   color: #FFD87B;
   font-size: 25px;
   text-shadow: 2px 2px 0px #df0c0c;
+}
+
+.tarjetas .carta button {
+  height: 25px;
+  width: 140px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+}
+.tarjetas .carta button:hover {
+  background-color: #FFD87B;
+  color: #000000;
+  height: 30px;
+  width: 150px;
+  transition: 0.5s;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  color: black;
+  margin: 5px;
+}
+.form button {
+  align-items: center;
+  flex-direction: column;
+  margin: 3px;
+  width: 140px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.form button:hover {
+  background-color: #FFD87B;
+  color: #000000;
+  height: 30px;
+  width: 150px;
+  transition: 0.5s;
 }
 
 nav {
@@ -156,21 +189,11 @@ nav {
 /*Fin--de--titulo*/
 /*footer--formulario(DESACTIVADO)--logoIG*/
 .footer {
+  display: flex;
   background-color: #473200;
   color: #FFD87B;
   border: 10px solid #1f1600;
   border-radius: 5px;
-}
-.footer form {
-  display: none;
-  font-size: 16px;
-  text-align: center;
-  width: 400px;
-  height: 470px;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  margin: 10px;
-  padding: 9px;
 }
 .footer .redes {
   align-items: center;
@@ -200,8 +223,8 @@ nav {
   display: flex;
   width: 500px;
   height: 500px;
-  border: 2px solid;
   margin-right: 10px;
+  border: 2px #000 solid;
 }
 .padre-columnas .columnas iframe {
   width: 500px;
@@ -216,14 +239,27 @@ nav {
 /*fin--de--index*/
 /*Aspectos--nosotros*/
 .nosotros {
-  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
 }
-.nosotros h5 {
+.nosotros img {
+  margin-right: 10px;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+.nosotros .texto-nosotros {
+  width: 440px;
+  height: 440px;
+}
+.nosotros .texto-nosotros h5 {
   text-align: center;
   font-size: 30px;
   color: #000;
 }
-.nosotros h6 {
+.nosotros .texto-nosotros h6 {
   text-align: center;
   font-size: 20px;
   color: #000;
@@ -243,7 +279,7 @@ nav {
   ul li a {
     padding: 10px 20px;
   }
-  .lista-nav img {
+  .lista-nav .img-logo {
     margin: 0px;
   }
   .padre-columnas {
@@ -256,20 +292,20 @@ nav {
   }
 }
 @media (max-width: 768px) {
-  nav .lista-nav {
+  .lista-nav {
     display: block;
     width: 100%;
     height: auto;
     position: static;
   }
-  nav .lista-nav ul {
+  .lista-nav .img-logo {
+    display: none;
+  }
+  .lista-nav ul {
     flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
-  }
-  nav .lista-nav .img-logo {
-    display: none;
   }
   .titulo {
     margin: 0px;
@@ -277,6 +313,11 @@ nav {
   .padre-columnas {
     display: flex;
     flex-direction: column;
+  }
+  .padre-columnas .columnas {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 576px) {
@@ -286,10 +327,10 @@ nav {
     height: auto;
     position: static;
   }
-  .lista-nav img {
+  .lista-nav .img-logo {
     display: none;
   }
-  nav ul {
+  .lista-nav ul {
     flex-direction: column;
     align-items: center;
     height: 100%;
@@ -302,7 +343,7 @@ nav {
     display: flex;
     flex-direction: column;
   }
-  .columnas {
+  .padre-columnas .columnas {
     height: 100%;
     align-items: center;
     justify-content: center;

@@ -1,0 +1,24 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: black;
+    margin: 5px;
+    button{
+        align-items: center;
+        flex-direction: column;
+        margin: 3px;
+        width: 140px;
+        cursor: pointer;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5px;
+            &:hover{
+                background-color:#FFD87B;
+                color: #000000;
+                height: 30px;
+                width: 150px;
+                transition: 0.5s;
+        }
+    }
+}

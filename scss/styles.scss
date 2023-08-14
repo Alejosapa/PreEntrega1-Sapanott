@@ -2,6 +2,8 @@
 @import "tarjetas";
 @import "grid-promociones";
 @import "promociones";
+@import "extend";
+@import "form";
 
 nav{
         background-color: #473200;  
@@ -69,22 +71,13 @@ nav{
 
 /*footer--formulario(DESACTIVADO)--logoIG*/
 .footer{
+        display: flex;
         background-color: #473200;
         color: #FFD87B;
         border: 10px solid #1f1600;
         border-radius: 5px ;
-        form{
-                display: none;
-                font-size: 16px;
-                text-align: center;
-                width: 400px;
-                height: 470px;
-                border: 2px solid #000;
-                box-sizing: border-box ; 
-                margin: 10px;
-                padding: 9px;
-        }
         .redes{
+        
         align-items: center;
         justify-content: center;
                 .logo-form{
@@ -129,17 +122,31 @@ nav{
 
 /*Aspectos--nosotros*/
 .nosotros{
-        margin: 5px;
-        h5{
-                text-align: center; 
-                font-size: 30px;
-                color: #000;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;
+        img{
+                margin-right: 10px;
+                width: 450px;
+                height: 450px;
+                object-fit: cover;  
         }
-        h6{
-                text-align: center; 
-                font-size: 20px;
-                color: #000;
-        } 
+        .texto-nosotros{
+                width: 440px;
+                height: 440px;
+                h5{
+                        text-align: center; 
+                        font-size: 30px;
+                        color: #000;
+                }
+                h6{
+                        text-align: center; 
+                        font-size: 20px;
+                        color: #000;
+                } 
+        }
+        
 }
 /*Fin--de--aspectos--carrousel*/
 
