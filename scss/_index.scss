@@ -1,0 +1,86 @@
+.padre-columnas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+        .columnas{
+            height: 450px;
+            width: 920px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            margin: 2%;
+            @extend %sombreado;
+                .columnas1{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 450px;
+                    height: 450px;
+                    padding: 8px;
+                    p{
+                        text-align: center; 
+                        font-size: 2rem;
+                        color: #000;
+                    }
+                }
+           
+        }
+    .relleno{
+        display: flex;
+        width: 400px;
+        height: 400px;
+        margin: 2%;
+            img{
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+            } 
+    }
+}
+
+
+.columnas2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.grid{
+    display: grid;
+    margin:  3rem;
+    border:5px solid #000 ;
+    border-radius: 5px;
+    gap: 5px  ;
+    background-color: #000;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,250px);
+    grid-template-areas:    "img1 img2 img3 img4"
+                            "img5 img5 img3 img6";
+
+    img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    }
+    .img1{
+            grid-area: img1;
+    }
+    .img2{
+            grid-area: img2;
+    }
+    .img3{
+            grid-area: img3;
+    }
+    .img4{
+            grid-area: img4;
+    }
+    .img5{
+            grid-area: img5;
+    }
+    .img6{
+            grid-area: img6;
+    }
+}
