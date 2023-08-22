@@ -326,8 +326,8 @@ nav {
 
 .padre-carousel {
   display: flex;
-  width: 800px;
-  height: 400px;
+  width: 900px;
+  height: 450px;
   padding: px;
   margin: 10px;
   border: 1px ridge rgba(178, 177, 177, 0.35);
@@ -336,28 +336,27 @@ nav {
 }
 .padre-carousel .carousel-inner {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   padding-right: 3px;
 }
 .padre-carousel .carousel-inner img {
-  height: 398px;
-  width: 400px;
+  height: 448px;
+  width: 440px;
   object-fit: cover;
   border-right: 2px ridge rgba(178, 177, 177, 0.35);
 }
 .padre-carousel .texto-carousel {
-  width: 400px;
-  height: 400px;
+  width: 440px;
+  height: 440px;
   color: rgb(0, 0, 0);
-  padding: 3px;
+  font-size: 1rem;
+  padding: 5px;
 }
 .padre-carousel .texto-carousel h5 {
   text-align: center;
+  padding: 3px;
   font-size: 1.7rem;
-}
-.padre-carousel .texto-carousel h6 {
-  font-size: 1rem;
 }
 
 /*media--queries*/
