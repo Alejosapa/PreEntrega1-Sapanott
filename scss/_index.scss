@@ -4,21 +4,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
         .columnas{
-            height: 450px;
-            width: 920px;
+            height: 400px;
+            width: 800px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: start;
             margin: 2%;
             @extend %sombreado;
-                .columnas1{
+                .texto-columnas{
                     display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    width: 450px;
-                    height: 450px;
-                    padding: 8px;
+                    flex-direction: column;
+                    width: 390px;
+                    height: 400px;
+                    padding:8px;
                     p{
                         text-align: center; 
                         font-size: 2rem;
