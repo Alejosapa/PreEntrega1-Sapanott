@@ -39,13 +39,17 @@
             width: 400px;
             height: 400px;
             color: rgb(0, 0, 0);
-            padding: 3px;
+            padding: 1%;
+            display: flexbox;
+            text-align: center;
+            justify-content: center;
                 h5{
                     text-align: center;
                     font-size: 1.70rem;
                 }
                 h6{
                     font-size: 1rem;
+        
                 }
         }
 }

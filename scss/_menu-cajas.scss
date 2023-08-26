@@ -13,8 +13,10 @@
                 object-fit: cover;
                 border-right:2px ridge rgba(178, 177, 177, 0.35);
             }
-                
-        }
+            .texto-carousel{
+                padding-top: 5rem;
+            } 
+        } 
 
         .padre-carousel{
             @extend %cajas-menu;
@@ -37,6 +39,9 @@
                 img{
                     object-fit: cover;
                     background-color: rgb(0, 0, 0);
+                }
+                .texto-carousel{
+                    padding-top: 5rem;
                 }
         }
 }

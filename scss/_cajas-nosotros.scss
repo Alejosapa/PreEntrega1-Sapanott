@@ -1,63 +1,17 @@
 .nosotros{
-    height: 450px;
-    width: 920px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2%;
-    justify-content: left;
-    @extend %sombreado;
-    img{
-            margin-right: 10px;
-            width: 450px;
-            height: 450px;
-            object-fit: cover;  
-    }
-    .texto-nosotros{
-        width: 450px;
-        height: 450px;
-            h5{
-                    text-align: center; 
-                    font-size: 30px;
-                    color: #000;
-            }
-            h6{
-                    text-align: center; 
-                    font-size: 20px;
-                    color: #000;
-            } 
-    }
-    
-}
+        display: flex;
+        @extend %cajas-menu;
+                img{
+                        height: 398px;
+                        width: 400px;
+                        object-fit: cover;
+                        border-right:2px ridge rgba(178, 177, 177, 0.35);
+                }
+                .texto-nosotros{
+                        text-align: center;
+                        padding: 2%;
+                        margin-top: 10px;
+                }
+}  
 
-.nosotros2{
-    height: 450px;
-    width: 920px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2%;
-    margin-left: 53%;
-    @extend %sombreado;
-    img{
-            margin-right: 10px;
-            width: 450px;
-            height: 450px;
-            object-fit: cover;  
-    }
-    .texto-nosotros{
-            width: 450px;
-            height: 450px;
-            h5{
-                    text-align: center; 
-                    font-size: 30px;
-                    color: #000;
-            }
-            h6{
-                    text-align: center; 
-                    font-size: 20px;
-                    color: #000;
-            } 
-    }
-    
-}
+
