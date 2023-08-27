@@ -1,0 +1,67 @@
+.padre-pedido{
+    margin: 2%;
+    width: 94vw;
+    height: 800px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+    padding: 1%;
+        .pedidos{
+            margin: 1%;
+                h5{
+                    color: black;
+                    font-size: 2rem;
+                }
+                hr{
+                    height: 4px;
+                    border: none;
+                    border-radius: 15px;
+                    background-color: #f9c242;
+                }
+        }
+        .total{
+            position: relative;
+            top: 70%;
+            left: 30%;
+                h5{
+                    font-size: 1.4rem;
+                    color: black ;          
+                }
+                hr{
+                    height: 3px;
+                    border: none;
+                    border-radius: 15px;
+                    background-color: #df0c0c;
+                }
+        }
+}
+.padre-pedido::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient( #df0c0c 2deg, transparent 100deg );
+    animation: rotar 8s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.padre-pedido::after{
+    content: "";
+    position: absolute;
+    height: 98%;
+    width: 98%;
+    background-color: beige;
+    z-index: -1;   
+}
